@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="m-5">
+      <header class="mb-3">
+        <h4>My Todo</h4>
+        <div class="content__wrapper">
+          <input
+            type="text"
+            placeholder="add item"
+            id="new-todo"
+            class="form--custom form-control me-2"
+          />
+          <button id="add-btn" class="btn btn-info">Add</button>
+        </div>
+      </header>
+      <!-- display todos here -->
+      <div id="listed-area">
+        <h4>ToDo</h4>
+        <ul id="my-todo" class="list-unstyled"></ul>
+        <h4>Done</h4>
+        <ul id="done-list" class="list-unstyled"></ul>
+        <!-- list-unstyled 前面不會有點點   -->
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
